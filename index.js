@@ -60,8 +60,11 @@ function fetchAndRenderMovieDetails(movieId) {
       let result = document.getElementById("tickets");
       result.textContent = `Available tickets: ${newAvailable}`;
     } else {
-     const button = document.getElementById("buy")
-      button.textContent = "Sold out";
+        const button = document.getElementById("buy");
+        button.textContent = "Sold out";
+        const list = document.querySelector(".film.item");
+        list.classList.add("sold-out");
+      }
     }
-  }
+    
   
