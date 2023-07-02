@@ -1,0 +1,23 @@
+.data{
+  display: flex;
+}
+
+#movie-details {
+  margin-left: 50px; 
+  font-size: x-large;
+  color: darkmagenta;
+}
+#films{
+  font-size: larger;
+}
+body{
+  background-image: url(j.jpg);
+}
+h1{
+  color: blue;
+}
+button{
+  background-color: darkgreen;
+  color:white;
+  font-size: xx-large;
+}
