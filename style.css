@@ -4,7 +4,7 @@
 
 #movie-details {
   margin-left: 50px; 
-  font-size: x-large;
+  font-size: larger;
   color: darkmagenta;
 }
 #films{
@@ -19,5 +19,17 @@ h1{
 button{
   background-color: darkgreen;
   color:white;
-  font-size: xx-large;
+  font-size: large;
+}
+.film.item.sold-out{
+  color: red;
+}
+img{
+  height: 20cm;
+  width: 20cm;
+}
+.moviedata{
+  border-style:groove ;
+  border-radius: 1cm;
+  background-color: lavender;
 }
