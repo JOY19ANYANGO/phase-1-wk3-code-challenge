@@ -5,7 +5,8 @@ function fetchAndRenderMovieDetails(movieId) {
       .then((res) => res.json())
       .then((movie) => {
         let available = movie.capacity - movie.tickets_sold;
-        const htmlmarkup = `<p>${movie.id}</p>
+        const htmlmarkup = `<div class="moviedata">
+                             <p>${movie.id}</p>
                              <p>Title:${movie.title}</p>
                              <p>Runtime:${movie.runtime}</p>
                              <p>Capacity:${movie.capacity}</p>
@@ -14,6 +15,7 @@ function fetchAndRenderMovieDetails(movieId) {
                              <p>Description:${movie.description}</p>
                              <p id="tickets">Available tickets:${available}</p>
                              <button id="buy">Buy Ticket</button><br><br>
+                             </div>
                              <img src=${movie.poster}>`;
   
         document.getElementById("movie-details").innerHTML = htmlmarkup;
@@ -60,11 +62,9 @@ function fetchAndRenderMovieDetails(movieId) {
       let result = document.getElementById("tickets");
       result.textContent = `Available tickets: ${newAvailable}`;
     } else {
-        const button = document.getElementById("buy");
-        button.textContent = "Sold out";
-        const list = document.querySelector(".film.item");
-        list.classList.add("sold-out");
-      }
+      const button = document.getElementById("buy");
+      button.textContent = "Sold out";
+      const movieItem = document.querySelector(`.film.item${movie.id}`);
+      movieItem.classList.add("sold-out");
     }
-    
-  
+  }
