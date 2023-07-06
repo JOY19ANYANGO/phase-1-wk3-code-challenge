@@ -39,7 +39,7 @@ function fetchAndRenderMovieDetails(movieId) {
   
   fetchAndRenderMovieDetails(1);
   
-  // Fetch movie list and create clickable movie names
+  
   fetch("http://localhost:3000/films")
     .then((res) => res.json())
     .then((data) => {
