@@ -64,7 +64,6 @@ function fetchAndRenderMovieDetails(movieId) {
     } else {
       const button = document.getElementById("buy");
       button.textContent = "Sold out";
-      const movieItem = document.querySelector(`.film.item${movie.id}`);
-      movieItem.classList.add("sold-out");
+      
     }
   }
