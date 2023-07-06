@@ -36,7 +36,7 @@ function fetchAndRenderMovieDetails(movieId) {
     fetchAndRenderMovieDetails(movieId);
   }
   
-  // Fetch and render details for the first movie when the page loads
+  
   fetchAndRenderMovieDetails(1);
   
   // Fetch movie list and create clickable movie names
