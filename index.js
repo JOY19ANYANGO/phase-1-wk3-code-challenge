@@ -1,4 +1,4 @@
-let available=0
+
 // Function to fetch and render movie details
 function fetchAndRenderMovieDetails(movieId) {
     fetch(`http://localhost:3000/films/${movieId}`)
