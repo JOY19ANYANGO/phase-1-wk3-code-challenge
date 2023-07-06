@@ -29,7 +29,7 @@ function fetchAndRenderMovieDetails(movieId) {
   
   
   function handleMovieNameClick(movieId) {
-    // Clear movie details first
+    
     document.getElementById("movie-details").innerHTML = '';
   
     // Fetch and render movie details
