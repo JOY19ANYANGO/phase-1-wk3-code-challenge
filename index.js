@@ -1,5 +1,5 @@
 
-// Function to fetch and render movie details
+
 function fetchAndRenderMovieDetails(movieId) {
     fetch(`http://localhost:3000/films/${movieId}`)
       .then((res) => res.json())
