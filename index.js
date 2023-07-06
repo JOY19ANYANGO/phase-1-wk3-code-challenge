@@ -32,7 +32,7 @@ function fetchAndRenderMovieDetails(movieId) {
     
     document.getElementById("movie-details").innerHTML = '';
   
-    // Fetch and render movie details
+    
     fetchAndRenderMovieDetails(movieId);
   }
   
