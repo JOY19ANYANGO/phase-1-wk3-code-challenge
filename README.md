@@ -38,6 +38,7 @@ $ json-server --watch db.json
 * Open your index.html file in the browser.You will see a list of movie titles  and the deetails of the first movie displayed.
 * Click on the  buy ticket button to purchase the ticket.
 * To see details of any other movie click on the movie title.
+* When the tickets are sold out you are unable to buy
 
 ## License.
 
