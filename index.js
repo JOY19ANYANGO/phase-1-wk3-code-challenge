@@ -27,7 +27,7 @@ function fetchAndRenderMovieDetails(movieId) {
       });
   }
   
-  // Function to handle movie name click
+  
   function handleMovieNameClick(movieId) {
     // Clear movie details first
     document.getElementById("movie-details").innerHTML = '';
